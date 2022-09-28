@@ -1,0 +1,51 @@
+class Usuario
+	Nome Completo: String
+	Idade: Int
+	Sexo: Classe Sexo
+	Data de Nascimento: String
+	Cpf: String
+	Telefone: String
+	E-mail: String
+	Pagamento: String
+
+
+class sexo
+	Sexo: char
+
+
+class Endereco
+	País: String
+	Rua: String
+	Complemento: String
+	Número: int
+	Cidade: String
+	Estado: String
+
+
+class Psicologo<Usuario>
+	Nome Completo: String
+	Topicos de atendimento: String
+	Areas de pesquisa ou estudo: String
+	Modo de consulta: String
+		- Online
+		- Remoto
+	Formação academica (composição): String
+		-- Formação que vai conter:
+		Curso: String
+		Instituição de ensino: String
+		Periodo: int
+		Descrição: String
+		Calendario: String
+
+
+class Paciente<Usuario>
+	Suposto Caso: String
+	Indicação: Boolean
+	Psicologo: Classe Psicologo
+	Local da Consulta: String
+	Classificar: int
+
+
+class diagnostico
+	Diagnóstico: String
+	Historico Familiar: String
