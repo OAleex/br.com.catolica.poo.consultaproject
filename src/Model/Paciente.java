@@ -9,14 +9,20 @@ public class Paciente extends Usuario {
     String localDaConsulta;
     int classificar;
     double pagamento;
+    Diagnostico diagnostico;
 
-    public Paciente(String nomeCompleto, Endereco endereco, String sexo, int idade, String dataDeNascimento, String cpf, String telefone, String eMail, String supostoCaso, boolean indicacao, String localDaConsulta, int classificar, double pagamento) {
+    public Paciente(String nomeCompleto, Endereco endereco, String sexo, int idade,
+                    String dataDeNascimento, String cpf, String telefone,
+                    String eMail, String supostoCaso, boolean indicacao,
+                    String localDaConsulta, int classificar,
+                    double pagamento, Diagnostico diagnostico) {
         super(nomeCompleto, endereco, sexo, idade, dataDeNascimento, cpf, telefone, eMail);
         this.supostoCaso = supostoCaso;
         this.indicacao = indicacao;
         this.localDaConsulta = localDaConsulta;
         this.classificar = classificar;
         this.pagamento = pagamento;
+        this.diagnostico = diagnostico;
     }
 
     public String getSupostoCaso() {
@@ -69,6 +75,14 @@ public class Paciente extends Usuario {
         this.pagamento = pagamento;
     }
 
+    public Diagnostico getDiagnostico() {
+        return diagnostico;
+    }
+
+    public void setDiagnostico(Diagnostico diagnostico) {
+        this.diagnostico = diagnostico;
+    }
+
     @Override
     public String toString() {
         return "[Paciente]\n" +
@@ -83,6 +97,7 @@ public class Paciente extends Usuario {
                 "Indicacao: " + indicacao + "\n" +
                 "Local da Consulta: " + localDaConsulta + "\n" +
                 "Classificacao que o Paciente deu a consulta: " + classificar + "\n" +
-                "Pagamento: " + pagamento;
+                "Pagamento: " + pagamento +
+                "Diagnostico: " + diagnostico;
     }
 }

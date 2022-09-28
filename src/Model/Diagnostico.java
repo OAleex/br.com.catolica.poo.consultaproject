@@ -28,9 +28,8 @@ public class Diagnostico {
 
     @Override
     public String toString() {
-        return "diagnostico{" +
-                "diagnostico='" + diagnostico + '\'' +
-                ", historicoFamiliar='" + historicoFamiliar + '\'' +
-                '}';
+        return "\n[Diagnostico]\n" +
+                "Diagnostico: " + diagnostico + "\n" +
+                "Historico familiar: " + historicoFamiliar;
     }
 }

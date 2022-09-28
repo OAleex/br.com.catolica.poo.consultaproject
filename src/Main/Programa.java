@@ -17,6 +17,9 @@ public class Programa {
         Endereco endereco2 = new Endereco("Brasil", "Vila Dois Irmãos", "Apartamento",
                 46, "Natal", "Rio Grande do Norte");
 
+        // Diagnostico
+        Diagnostico diagnostico = new Diagnostico("TDAH", "Sim");
+
 //         Usuario padrao + permissoes de Psicologo
         Psicologo psicologo1 = new Psicologo("Julio de Almeida Lima", endereco2, "Masculino", 33,
                 "04/04/1989", "661.456.414-41", "(84) 9 9385-45579",
@@ -31,7 +34,7 @@ public class Programa {
                 "Feminino", 23, "04/05/1999",
                 "444.555.444-94", "(83) 9 9245-5566",
                 "amandaal@br.com", "Depressao", true, "a", 10,
-                1500.0);
+                1500.0, diagnostico);
         System.out.println(paciente1);
         System.out.println(paciente1.getEndereco());
 
